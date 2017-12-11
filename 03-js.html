@@ -1,0 +1,19 @@
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+<script type="text/babel">
+const rootElement = document.getElementById('root')
+const Mensaje = props => <div>{props.children}</div>
+const element = (
+    <div className = 'container'>
+        <Mensaje>Hola Mundo</Mensaje>
+        <Mensaje>Chao Mundo</Mensaje>
+    </div>
+)
+
+console.log(element)
+ReactDOM.render(element, rootElement)
+
+</script>
